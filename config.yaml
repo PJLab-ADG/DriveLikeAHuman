@@ -1,0 +1,8 @@
+OPENAI_API_TYPE: 'azure' #'azure'  OR 'openai'
+# for 'openai'
+OPENAI_KEY: 'sk-xxxxxxxxxxx' # your openai key
+# for 'azure'
+AZURE_MODEL: 'XXXXX' # your deploment_model_name 
+AZURE_API_BASE: https://xxxxxxxx.openai.azure.com/ # your deployment endpoint
+AZURE_API_KEY: 'xxxxxx' # your deployment key
+AZURE_API_VERSION: '2023-03-15-preview'

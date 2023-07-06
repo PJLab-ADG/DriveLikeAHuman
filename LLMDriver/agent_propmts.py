@@ -5,7 +5,7 @@ TRAFFIC_RULES = """
 3. DONOT change lane frequently. If you want to change lane, double-check the safety of vehicles on target lane.
 """
 
-POSSIBLE_ADD_RULES = f"""
+POSSIBLE_ADD_RULES = """
 1. If your speed and leading car speed is near and distance is
 delete this item: DONOT change lane frequently. If you want to change lane, double-check the safety of vehicles on target lane.
 2. Pay attention to your last decision and, if possible, do not go against it, unless you think it is very necessary.
