@@ -1,9 +1,8 @@
 Flask==2.2.2
 gymnasium==0.28.1
-highway_env==1.8.2
-langchain==0.0.219
+langchain==0.0.225
+openai==0.27.7
 matplotlib==3.7.1
 numpy==1.24.3
 PyYAML==6.0
 rich==13.4.2
-tiktoken==0.4.0

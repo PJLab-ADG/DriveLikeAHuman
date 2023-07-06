@@ -13,13 +13,10 @@ from scenario.scenario import Scenario
 
 
 class OutputParser:
-    def __init__(self, sce: Scenario, temperature: float = 0.0) -> None:
+    def __init__(self, sce: Scenario,llm, temperature: float = 0.0) -> None:
         self.sce = sce
         self.temperature = temperature
-        self.llm = AzureChatOpenAI(
-            deployment_name="GPT35",
-            temperature=temperature,
-        )
+        self.llm = llm
         # todo: put into a yaml file
         self.response_schemas = [
             ResponseSchema(
