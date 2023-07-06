@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Human In Loop Evaluation</title>
+</head>
+
+<body>
+    <h1>Human In Loop Evaluation</h1>
+    <p>Enter the frame value between minimum frame and maximum frame, and then click the Confirm button to view the
+        decision information
+        of the
+        Driver Agent.</p>
+    <p style="font-size: 18;"><b>Frame (minimum frame: {{minFrame}}, maximum frame: {{maxFrame}}):</b>
+        <input type="text" id="frameInput" style="width: 2rem; font: 16px Times New Roman;">
+        <button type="submit" id="confirm">Confirm</button>
+    </p>
+    <h2>Scenario</h2>
+    <p id="imgParagraph"></p>
+    <h2>Thoughts & Actions</h2>
+    <textarea readonly style="width: 70rem; height: 20rem; font: 16px Times New Roman;" id="thoughtsAndActions">
+    </textarea>
+    <h2>Final Decision</h2>
+    <textarea readonly style="width: 70rem; height: 8rem; font: 16px Times New Roman;" id="finalDecision">
+    </textarea>
+    <h2>Output Parser</h2>
+    <textarea readonly style="width: 70rem; height: 5rem; font: 16px Times New Roman;" id="outputParser">
+    </textarea>
+</body>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#confirm').click(function () {
+            var frame = $('#frameInput').val();
+            console.log(frame);
+            $.ajax({
+                url: '/get_frame',
+                type: 'POST',
+                data: { 'frame': frame },
+                success: function (data) {
+                    $('#imgParagraph').html(
+                        '<img src="' + data['img'] + '" style="width: 70rem; height: auto;">'
+                    ),
+                        $('#thoughtsAndActions').val(data['thoughtsAndActions']),
+                        $('#finalDecision').val(data['finalDecision']),
+                        $('#outputParser').val(data['outputParser']),
+                        $('#humanEvaluation'), val('');
+                },
+                error: function (data) {
+                    alert('Error:')
+                }
+            })
+        })
+    });
+</script>
+
+</html>
