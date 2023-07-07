@@ -1,6 +1,8 @@
 # Drive Like A Human
 
-[![Static Badge](https://img.shields.io/badge/PDF-Drive_Like_A_Human-8A2BE2)]()
+[![Static Badge](https://img.shields.io/badge/PDF-Drive_Like_A_Human-8A2BE2)](https://github.com/PJLab-ADG/DriveLikeAHuman/blob/main/assets/Driving_Like_Human.pdf)
+[![Static Badge](https://img.shields.io/badge/Homepage-Drive_Like_A_Human-00cec9)
+]()
 
 
 Drive Like a Human: Rethinking Autonomous Driving with Large Language Models
