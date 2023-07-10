@@ -1,11 +1,14 @@
 # Drive Like A Human
 
 [![Static Badge](https://img.shields.io/badge/PDF-Drive_Like_A_Human-8A2BE2)](https://github.com/PJLab-ADG/DriveLikeAHuman/blob/main/assets/Driving_Like_Human.pdf)
+[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Live_demo-blue)](https://huggingface.co/spaces/Wayne-lc/drive_like_human)
 [![Static Badge](https://img.shields.io/badge/Homepage-Drive_Like_A_Human-00cec9)
 ]()
 
 
 Drive Like a Human: Rethinking Autonomous Driving with Large Language Models
+
+NEWS: Try out our web demo on   [Hugging face🤗](https://huggingface.co/spaces/Wayne-lc/drive_like_human) without any deployment!
 
 ## Closed-loop interaction ability in driving scenarios
 
@@ -26,11 +29,9 @@ AZURE_API_KEY: 'xxxxxx' # your deployment key
 AZURE_API_VERSION: '2023-03-15-preview'
 ```
 
-We use GPT-3.5 as the default LLM, but you can also refer to [LangChain-Large Language Models](https://python.langchain.com/docs/modules/model_io/models/) to define your own LLM. In this case, you need to modify lines 20-40 of `HELLM.py` to configure your own LLM.
+We use GPT-3.5 (**recommended the models with 8k+ max token**) as the default LLM, but you can also refer to [LangChain-Large Language Models](https://python.langchain.com/docs/modules/model_io/models/) to define your own LLM. In this case, you need to modify lines 24-40 of `HELLM.py` to configure your own LLM.
 
 ```Python
-OPENAI_CONFIG = yaml.load(open('config.yaml'), Loader=yaml.FullLoader)
-
 if OPENAI_CONFIG['OPENAI_API_TYPE'] == 'azure':
     os.environ["OPENAI_API_TYPE"] = OPENAI_CONFIG['OPENAI_API_TYPE']
     os.environ["OPENAI_API_VERSION"] = OPENAI_CONFIG['AZURE_API_VERSION']
@@ -39,13 +40,16 @@ if OPENAI_CONFIG['OPENAI_API_TYPE'] == 'azure':
     llm = AzureChatOpenAI(
         deployment_name=OPENAI_CONFIG['AZURE_MODEL'],
         temperature=0,
-        max_tokens=1024
+        max_tokens=1024,
+        request_timeout=60
     )
 elif OPENAI_CONFIG['OPENAI_API_TYPE'] == 'openai':
     os.environ["OPENAI_API_KEY"] = OPENAI_CONFIG['OPENAI_KEY']
     llm = ChatOpenAI(
         temperature=0,
-        max_tokens=1024
+        model_name='gpt-3.5-turbo-16k-0613', # or any other model with 8k+ context
+        max_tokens=1024,
+        request_timeout=60
     )
 ```
 
@@ -59,7 +63,7 @@ Then, by running `python HELLM.py`, you can see the process of LLM making decisi
 
 ## Reasoning ability with common sense
 
-Try it with your own image in [this notebook](CaseReasoning.ipynb)!
+Try it with your own image in  [Hugging face🤗](https://huggingface.co/spaces/Wayne-lc/drive_like_human) or deploy your own with [this notebook](CaseReasoning.ipynb)!
 
 ![img](assets/reasoning_1.png)
 
