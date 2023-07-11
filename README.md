@@ -74,7 +74,15 @@ Try it with your own image in  [Hugging face🤗](https://huggingface.co/spaces/
 ![img](assets/memorization.png)
 
 
-<!-- ## Cite -->
+## Cite
+```
+@misc{fu2023drive,
+      title={Drive Like a Human: Rethinking Autonomous Driving with Large Language Models}, 
+      author={Daocheng Fu and Xin Li and Licheng Wen and Min Dou and Pinlong Cai and Botian Shi},
+      year={2023}, 
+      howpublished = {\url{https://github.com/PJLab-ADG/DriveLikeAHuman}},
+}
+```
 
 ## Acknowledgments
 
