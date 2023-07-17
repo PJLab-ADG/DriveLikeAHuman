@@ -1,9 +1,8 @@
 # Drive Like A Human
 
-[![Static Badge](https://img.shields.io/badge/PDF-Drive_Like_A_Human-8A2BE2)](https://github.com/PJLab-ADG/DriveLikeAHuman/blob/main/assets/Driving_Like_Human.pdf)
-[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Live_demo-blue)](https://huggingface.co/spaces/Wayne-lc/drive_like_human)
-[![Static Badge](https://img.shields.io/badge/Homepage-Drive_Like_A_Human-00cec9)
-]()
+[![Static Badge](https://img.shields.io/badge/Arxiv-pdf-8A2BE2?logo=arxiv)](https://arxiv.org/abs/2307.07162)
+[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Live_demo-blue?)](https://huggingface.co/spaces/Wayne-lc/drive_like_human)
+<!-- [![Static Badge](https://img.shields.io/badge/Homepage-Drive_Like_A_Human-00cec9)]() -->
 
 
 Drive Like a Human: Rethinking Autonomous Driving with Large Language Models
@@ -78,9 +77,11 @@ Try it with your own image in  [Hugging face🤗](https://huggingface.co/spaces/
 ```
 @misc{fu2023drive,
       title={Drive Like a Human: Rethinking Autonomous Driving with Large Language Models}, 
-      author={Daocheng Fu and Xin Li and Licheng Wen and Min Dou and Pinlong Cai and Botian Shi},
-      year={2023}, 
-      howpublished = {\url{https://github.com/PJLab-ADG/DriveLikeAHuman}},
+      author={Daocheng Fu and Xin Li and Licheng Wen and Min Dou and Pinlong Cai and Botian Shi and Yu Qiao},
+      year={2023},
+      eprint={2307.07162},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO}
 }
 ```
 
