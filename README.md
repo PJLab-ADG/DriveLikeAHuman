@@ -15,6 +15,13 @@ https://github.com/PJLab-ADG/DriveLikeAHuman/assets/18390668/0ec8e901-9dc1-4c89-
 
 ![img](assets/closeLoop.png)
 
+**Pre-requirement**
+
+```bash
+pip install highway-env
+pip install -r requirements.txt
+```
+
 Running `HELLM.py` allows you to experience LLM’s closed-loop driving in HighwayEnv. First, you need to modify config.yaml to configure your LLM.
 
 ```yaml
