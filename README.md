@@ -7,7 +7,9 @@
 
 Drive Like a Human: Rethinking Autonomous Driving with Large Language Models
 
-NEWS: Try out our web demo on   [Hugging face🤗](https://huggingface.co/spaces/Wayne-lc/drive_like_human) without any deployment!
+## NEWS
+- 🌟 Welcome to check out our new work [DiLu: A Knowledge-Driven Approach to Autonomous Driving with Large Language Models](https://arxiv.org/abs/2309.16292) and [awesome knowledge-driven AD](https://github.com/PJLab-ADG/awesome-knowledge-driven-AD)!
+- 🔥 Try out our web demo on   [Hugging face🤗](https://huggingface.co/spaces/Wayne-lc/drive_like_human) without any deployment!
 
 ## Closed-loop interaction ability in driving scenarios
 
