@@ -84,13 +84,11 @@ Try it with your own image in  [Hugging face🤗](https://huggingface.co/spaces/
 
 ## Cite
 ```
-@misc{fu2023drive,
-      title={Drive Like a Human: Rethinking Autonomous Driving with Large Language Models}, 
-      author={Daocheng Fu and Xin Li and Licheng Wen and Min Dou and Pinlong Cai and Botian Shi and Yu Qiao},
-      year={2023},
-      eprint={2307.07162},
-      archivePrefix={arXiv},
-      primaryClass={cs.RO}
+@article{fu2023drive,
+  title={Drive like a human: Rethinking autonomous driving with large language models},
+  author={Fu, Daocheng and Li, Xin and Wen, Licheng and Dou, Min and Cai, Pinlong and Shi, Botian and Qiao, Yu},
+  journal={arXiv preprint arXiv:2307.07162},
+  year={2023}
 }
 ```
 
