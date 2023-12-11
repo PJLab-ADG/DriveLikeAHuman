@@ -36,7 +36,7 @@ elif OPENAI_CONFIG['OPENAI_API_TYPE'] == 'openai':
     os.environ["OPENAI_API_KEY"] = OPENAI_CONFIG['OPENAI_KEY']
     llm = ChatOpenAI(
         temperature=0,
-        model_name='gpt-3.5-turbo-16k-0613', # or any other model with 8k+ context
+        model_name='gpt-3.5-turbo-1106', # or any other model with 8k+ context
         max_tokens=1024,
         request_timeout=60
     )
