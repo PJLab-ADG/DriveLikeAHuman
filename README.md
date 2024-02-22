@@ -8,8 +8,8 @@
 Drive Like a Human: Rethinking Autonomous Driving with Large Language Models
 
 ## NEWS
-- 🔥 Check out **our new work on ICLR 24 [DiLu: A Knowledge-Driven Approach to Autonomous Driving with LLM](https://pjlab-adg.github.io/DiLu/)** !
-- 🌟 We present **a survey on Knowledge-driven Autonomous Driving called [Awesome Knowledge-driven AD](https://github.com/PJLab-ADG/awesome-knowledge-driven-AD)**.
+- 🔥 Check out **our work on ICLR 24 [DiLu: A Knowledge-Driven Approach to Autonomous Driving with LLM](https://pjlab-adg.github.io/DiLu/)** !
+- 🌟 We present **a survey on [Awesome Knowledge-driven AD](https://github.com/PJLab-ADG/awesome-knowledge-driven-AD)**.
 
 ## Closed-loop interaction ability in driving scenarios
 
